@@ -1,9 +1,6 @@
 from flask import Flask, render_template
-from flask_bootstrap import Bootstrap  # type: ignore
 
 app = Flask(__name__)
-
-Bootstrap(app)
 
 
 @app.route('/')
