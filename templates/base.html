@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask</title>
+    {{ bootstrap.load_css }}
+</head>
+<body>
+    <nav class="navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Flask</a>
+    </nav>
+    <div class="container">
+        {% black content %}
+        {% endblock %}
+    </div>
+    {{ bootstrap.load_js() }}
+    
+</body>
+</html>
